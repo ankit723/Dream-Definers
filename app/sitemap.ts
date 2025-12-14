@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next'
+import { prisma } from '@/lib/prisma'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dreamdefiners.com'
   
-  // Define all routes with their priorities and change frequencies
-  const routes = [
+  // Define all static routes with their priorities and change frequencies
+  const staticRoutes = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -61,6 +62,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return routes
+  // Fetch all published blogs
+  let blogRoutes: MetadataRoute.Sitemap = []
+  try {
+    const blogs = await prisma.blog.findMany({
+      where: {
+        published: true,
+      },
+      select: {
+        slug: true,
+        updatedAt: true,
+        publishedAt: true,
+      },
+      orderBy: {
+        publishedAt: 'desc',
+      },
+    })
+
+    blogRoutes = blogs.map((blog) => ({
+      url: `${baseUrl}/blogs/${blog.slug}`,
+      lastModified: blog.updatedAt || blog.publishedAt || new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    }))
+  } catch (error) {
+    console.error('Error fetching blogs for sitemap:', error)
+    // Continue without blog routes if there's an error
+  }
+
+  return [...staticRoutes, ...blogRoutes]
 }
 

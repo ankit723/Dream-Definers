@@ -12,7 +12,7 @@ export default function OurFoundersPage() {
         </h1>
 
         {/* Sonali Singh Section */}
-        <div className="mb-24">
+        <div id="sonali-singh" className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Text Content - Left */}
             <div className="flex-1 space-y-4">
@@ -72,7 +72,7 @@ export default function OurFoundersPage() {
         </div>
 
         {/* Randhir Garnaik Section */}
-        <div>
+        <div id="randhir-garnaik mb-20">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left */}
             <div className="flex-1 flex justify-center lg:justify-start order-2 lg:order-1">
