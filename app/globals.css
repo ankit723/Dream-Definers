@@ -148,3 +148,23 @@
   transition: none !important;
   height: auto;
 }
+
+
+.hero-heading {
+  @apply leading-tight text-4xl sm:text-5xl md:text-6xl font-extrabold;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 4px #0e44b7;
+  transform: translate(2px, 2px);
+}
+
+
+.leader-text {
+  background: linear-gradient(90deg, #0e44b7, #387bf8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+

@@ -7,6 +7,7 @@ import { PartnersCarousel } from "@/components/home/partners-carousel";
 import { ReviewsCarousel } from "@/components/home/reviews-carousel";
 import { FAQSection } from "@/components/home/faq-section";
 import { MovingCards } from "@/components/home/moving-cards";
+import { CountUp } from "@/components/home/countup";
 
 export const metadata: Metadata = {
   title: "Dream Definers | Home",
@@ -38,6 +39,21 @@ export const metadata: Metadata = {
   },
 };
 
+function OutlinedText({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="relative inline-block">
+      <span
+        aria-hidden
+        className="absolute inset-0 text-transparent stroke-text"
+      >
+        {children}
+      </span>
+      <span className="relative text-white">{children}</span>
+    </span>
+  )
+}
+
+
 export default function Home() {
   return (
     <section>
@@ -49,9 +65,13 @@ export default function Home() {
         <div className="relative container mx-auto z-10 flex flex-col md:flex-row items-center justify-between h-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 sm:py-16 md:py-0 min-h-0">
           <div className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold flex flex-col gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 text-center md:text-left w-full md:w-auto md:flex-1">
             <div className="space-y-2 sm:space-y-3 md:space-y-4">
-              <h1 className="leading-tight wrap-break-word">Transforming Learners</h1>
-              <h1 className="leading-tight wrap-break-word">Into <span className="text-blue-300 md:text-blue-800">Leaders!</span></h1>
+              <h1 className="hero-heading">
+                Transforming <OutlinedText>Learners</OutlinedText>
+                <br />
+                Into <span className="leader-text">Leaders!</span>
+              </h1>
             </div>
+
             <div className="flex items-center justify-center md:justify-start gap-2 sm:gap-3 flex-wrap mt-4 sm:mt-6 md:mt-8">
               {social().map((item) => (
                 <Link
@@ -98,22 +118,25 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
             <div className="flex-1 flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 w-full sm:w-auto max-w-xs sm:max-w-none">
               <Image src="/assets/home/courses/aviation.png" alt="Course 1" width={450} height={450} className="w-full max-w-[150px] xs:max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[450px] h-auto" />
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Aviation</h2>
+              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Aviation</h2>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 w-full sm:w-auto max-w-xs sm:max-w-none">
               <Image src="/assets/home/courses/communication.png" alt="Course 2" width={450} height={450} className="w-full max-w-[150px] xs:max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[450px] h-auto" />
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Effective Communication</h2>
+              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Effective Communication</h2>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 w-full sm:w-auto max-w-xs sm:max-w-none">
               <Image src="/assets/home/courses/placement.png" alt="Course 3" width={450} height={450} className="w-full max-w-[150px] xs:max-w-[180px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[450px] h-auto" />
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Pre-Placement Training</h2>
+              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full sm:w-auto px-4 sm:px-6">Pre-Placement Training</h2>
             </div>
 
           </div>
         </div>
 
         <div className="my-8 sm:my-12 md:my-16 lg:my-20 xl:my-24 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">          
-          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-4 sm:mb-6 md:mb-8 lg:mb-10">Our Speciality</h1>
+          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-2">Our Speciality</h1>
+
+          <p className="text-blue-900 text-center font-medium mb-1 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Communication and Confidence Checkup Camp (CCC)</p>
+          <p className="text-blue-900 text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Pre and Post Assessment</p>
 
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
             <div className="flex flex-col items-start justify-center gap-4 sm:gap-5 md:gap-6 flex-1 w-full lg:w-auto">
@@ -131,11 +154,6 @@ export default function Home() {
                   <h2 className="text-sm xs:text-base sm:text-lg md:text-xl font-bold text-blue-950">Post-Assessment</h2>
                 </div>
                 <p className="text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">The post-assessment line represents learners' performance after training. It demonstrates steady and continuous improvement across all assessments. By the final evaluation, performance reaches a significantly higher level, reflecting the impact of effective learning and training.</p>
-              </div>
-              
-              <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-                <p className="text-blue-900 font-bold text-xs xs:text-sm sm:text-base md:text-lg">Communication and Confidence Checkup Camp</p>
-                <p className="text-blue-900 font-bold text-xs xs:text-sm sm:text-base md:text-lg">Pre and Post Assessment</p>
               </div>
             </div>
 
@@ -162,8 +180,8 @@ export default function Home() {
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mt-6 sm:mt-10 md:mt-12 lg:mt-16 xl:mt-20">
             {
               keyFeatures().map((item) => (
-                <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 border-2 border-blue-950 p-3 sm:p-4 md:p-5 lg:p-6 rounded-md hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full shadow-2xl" key={item.title}>
-                  <p className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl relative">{item.title}
+                <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 border-2 border-blue-950 p-3 sm:p-4 md:p-5 lg:p-6 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full shadow-2xl" key={item.title}>
+                  <p className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl relative"> {item.subTitle==="Students Trained"?item.title:<CountUp to={parseInt(item.title)} />}
                     <item.icon className={cn("size-3 xs:size-4 sm:size-5 md:size-6 absolute top-0 -right-3 xs:-right-4 sm:-right-5", ` hover:text-white transition-all duration-300`)} />
                   </p>
                   <p className="text-xs xs:text-sm sm:text-base md:text-lg font-bold text-center px-1">{item.subTitle}</p>
@@ -177,28 +195,81 @@ export default function Home() {
         </div>  
 
         <div className="my-8 sm:my-12 md:my-16 lg:my-20 xl:my-24 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-6 sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20">Meet Our Founders</h1>
+          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-8 md:mb-12 lg:mb-16">
+            Meet Our Founders
+          </h1>
 
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center w-full gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
-            <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
-              <Image src="/assets/home/founders/sonali.png" alt="Founder 1" width={500} height={400} className="w-full h-auto rounded-lg" />
-              <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-blue-950 my-3 sm:my-4 md:my-5 lg:my-6">Sonali Singh</h2>
-              <p className="text-xs xs:text-sm sm:text-base md:text-lg w-full leading-relaxed">One of our esteemed founders, Sonali Singh, has an MA in Political Science and more than twenty years of experience as a Senior Class Teacher and Soft Skills Trainer. She is a professional CBSE-certified Teachers' Trainer, well known for creating and delivering substantial training. She has a variety of skills ranging from communication and leadership to interpersonal skills and more, that can be delivered to different kinds of learners.</p>
-              <Link href="/our-founders">
-                <Button variant={"outline"} className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all duration-300 my-3 sm:my-4 md:my-5 lg:my-6 w-full sm:w-auto text-xs xs:text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-2.5">Read More</Button>
-              </Link>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             
-            <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
-              <Image src="/assets/home/founders/randhir.png" alt="Founder 2" width={500} height={400} className="w-full h-auto rounded-lg" />
-              <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-blue-950 my-3 sm:my-4 md:my-5 lg:my-6">Randhir Garnaik</h2>
-              <p className="text-xs xs:text-sm sm:text-base md:text-lg w-full leading-relaxed">Our founder Randhir Garnaik is a well-trained Soft Skills Trainer, a life coach and an entrepreneur who carries an experience of more than twenty years. His expertise spans over Communicative English, Personality Development, Building Resilience, Confidence Building, Leadership, and both critical and creative thinking. He is known for his energetic and highly interactive sessions and a fine balance of being a charismatic leader and a professional mentor .</p>
-              <Link href="/our-founders/#randhir-garnaik">
-                <Button variant={"outline"} className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all duration-300 my-3 sm:my-4 md:my-5 lg:my-6 w-full sm:w-auto text-xs xs:text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-2.5">Read More</Button>
+            {/* Founder Card */}
+            <div className="flex flex-col">
+              {/* Image wrapper enforces size */}
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-xl">
+                <Image
+                  src="/assets/home/founders/sonali.png"
+                  alt="Sonali Singh"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <h2 className="text-blue-950 text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+                Sonali Singh
+              </h2>
+
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3">
+                One of our esteemed founders, Sonali Singh, has an MA in Political Science
+                and more than twenty years of experience as a Senior Class Teacher and
+                Soft Skills Trainer. She is a professional CBSE-certified Teachers'
+                Trainer, well known for creating and delivering substantial training.
+              </p>
+
+              <Link href="/our-founders" className="mt-5 w-fit">
+                <Button
+                  variant="outline"
+                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all"
+                >
+                  Read More
+                </Button>
               </Link>
             </div>
+
+            {/* Founder Card */}
+            <div className="flex flex-col">
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-xl">
+                <Image
+                  src="/assets/home/founders/randhir.jpeg"
+                  alt="Randhir Garnaik"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <h2 className="text-blue-950 text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+                Randhir Garnaik
+              </h2>
+
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3">
+                Our founder Randhir Garnaik is a well-trained Soft Skills Trainer, a life
+                coach and an entrepreneur with more than twenty years of experience. His
+                expertise spans Communicative English, Personality Development, Leadership,
+                and Confidence Building.
+              </p>
+
+              <Link href="/our-founders/#randhir-garnaik" className="mt-5 w-fit">
+                <Button
+                  variant="outline"
+                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all"
+                >
+                  Read More
+                </Button>
+              </Link>
+            </div>
+
           </div>
         </div>
+
 
         <FAQSection />
 

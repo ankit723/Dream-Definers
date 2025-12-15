@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function GalleryPage() {
-  // Gallery images in order
   const galleryImages = [
     {
       src: "/assets/gallery/image.png",
@@ -40,44 +39,28 @@ export default function GalleryPage() {
       src: "/assets/gallery/image copy 8.png",
       alt: "Indoor event with semi-circular seating arrangement",
     },
-  ];
+  ]
 
   return (
     <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="container mx-auto px-4">
-        {/* Header with Back Button and Title */}
-        <div className="flex items-center justify-center gap-4 mb-16 relative">
 
-          {/* Main Heading - Centered */}
-          <h1 className="text-5xl md:text-6xl font-bold text-black">
+        {/* Header */}
+        <div className="relative flex items-center justify-center mb-16">
+          <Link
+            href="/"
+            className="absolute left-0 flex items-center justify-center w-10 h-10 rounded-full border border-black hover:bg-black hover:text-white transition"
+          >
+            ←
+          </Link>
+
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide">
             GALLERY
           </h1>
         </div>
 
-        {/* Gallery Grid - 3 columns, 3 rows */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className="relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="relative w-full" style={{ display: "block" }}>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={1200}
-                  height={1200}
-                  className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300"
-                  style={{ maxWidth: "100%", height: "auto" }}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  unoptimized
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+        <Image src="/assets/gallery/gallery_copy.png" alt="Gallery Image" width={100} height={100} style={{height: "100%", width: "100vw"}} unoptimized/>
       </div>
     </div>
-  );
+  )
 }
-

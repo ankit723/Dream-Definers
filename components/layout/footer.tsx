@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { social } from "@/lib/utils";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 export const Footer = () => {
   return (
@@ -14,7 +15,7 @@ export const Footer = () => {
           {/* Logo Section */}
           <div className="flex flex-col">
             <div className="relative w-28 h-36 mb-4">
-              <div className="absolute inset-0 bg-gradient-to-b from-blue-800 via-blue-600 to-blue-400 rounded-lg p-3 flex flex-col items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 rounded-lg p-3 flex flex-col items-center justify-center shadow-lg">
                 {/* Logo Icon */}
                 <div className="w-12 h-12 mb-2 flex items-center justify-center">
                   <Image
@@ -22,7 +23,7 @@ export const Footer = () => {
                     alt="Dream Definers Logo"
                     width={100}
                     height={100}
-                    className="object-contain filter brightness-0 invert w-full"
+                    className="object-contain filter w-full"
                   />
                 </div>
                 <div className="text-center">
@@ -110,6 +111,11 @@ export const Footer = () => {
                 <span>751003</span>
               </li>
             </ul>
+            <div className="container mx-auto flex justify-start my-10 ">
+              <Button asChild size="sm" className="text-xs xl:text-sm">
+                <Link href="/free-consultancy">Get Free Consultancy</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
