@@ -93,6 +93,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+<Script
+          id="contentsquare-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                var cs = document.createElement('script');
+                cs.src = 'https://t.contentsquare.net/uxa/5cae52c910b64.js';
+                cs.async = true;
+                document.head.appendChild(cs);
+              })();
+            `,
+          }}
+        />      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
