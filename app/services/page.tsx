@@ -7,31 +7,31 @@ export default function ServicesPage() {
       title: "Aviation",
       description:
         "Comprehensive training programs for aviation and ground staff, covering flight operations, safety protocols, customer service, and technical maintenance.",
-      image: "/assets/services/aviation.png",
+      image: "/assets/services/aviation2.png",
     },
     {
       title: "Soft Skills and Pre-Placement Training",
       description:
         "Develop essential soft skills and prepare for job placements through interactive training sessions and personalized mentoring.",
-      image: "/assets/services/softskills.png",
+      image: "/assets/services/softskills2.png",
     },
     {
       title: "Communication and personality development",
       description:
         "Enhance your communication abilities and personal growth through structured programs designed to build confidence and professional presence.",
-      image: "/assets/services/communication.png",
+      image: "/assets/services/communication2.png",
     },
     {
       title: "Dynamic public speaking and stage presence",
       description:
         "Master the art of public speaking and develop commanding stage presence through practical training and real-world practice.",
-      image: "/assets/services/dynamic_speaking.png",
+      image: "/assets/services/dynamic_speaking2.png",
     },
     {
       title: "Corporate training and industry readiness",
       description:
         "Prepare for the corporate world with industry-focused training programs that bridge the gap between academic learning and professional requirements.",
-      image: "/assets/services/corporate_traning.png",
+      image: "/assets/services/corporate_training2.png",
     },
     {
       title: "Resume Building and Email etiquette",
@@ -43,13 +43,13 @@ export default function ServicesPage() {
       title: "Problem Solving and critical thinking",
       description:
         "Develop analytical skills and problem-solving abilities through structured exercises and critical thinking workshops.",
-      image: "/assets/services/problem_solving.png",
+      image: "/assets/services/problem_solving2.png",
     },
     {
       title: "Career orientation workshops",
       description:
         "Get guidance on your career path through interactive workshops designed to help you make informed professional decisions.",
-      image: "/assets/services/career_orientation.png",
+      image: "/assets/services/career_orientation2.png",
     },
   ];
 

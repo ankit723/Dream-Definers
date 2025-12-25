@@ -46,7 +46,7 @@ export default function GalleryPage() {
       <div className="container mx-auto px-4">
 
         {/* Header */}
-        <div className="relative flex items-center justify-center mb-16">
+        <div className="relative flex items-center justify-center">
           <Link
             href="/"
             className="absolute left-0 flex items-center justify-center w-10 h-10 rounded-full border border-black hover:bg-black hover:text-white transition"
@@ -59,7 +59,7 @@ export default function GalleryPage() {
           </h1>
         </div>
 
-        <Image src="/assets/gallery/gallery_copy.png" alt="Gallery Image" width={100} height={100} style={{height: "100%", width: "100vw"}} unoptimized/>
+        <Image src="/assets/gallery/gallery_copy.png" alt="Gallery Image" width={100} height={100} style={{height: "100%", width: "100vw", scale:"0.75", marginTop:"-15rem"}} unoptimized/>
       </div>
     </div>
   )

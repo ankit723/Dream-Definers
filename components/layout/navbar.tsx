@@ -95,13 +95,13 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 md:px-8 flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
+          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors rounded-lg">
             <Image 
               src="/assets/common/logo.png" 
               alt="Logo" 
               width={45} 
               height={45}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-xl"
             />
           </Link>
         </div>

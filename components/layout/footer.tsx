@@ -5,12 +5,13 @@ import Image from "next/image";
 import { social } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
+import { OutlinedText } from "../ui/outlinedText";
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-950 text-white w-full">
+    <footer className="bg-linear-to-b from-blue-950 to-blue-900 text-white w-full">
       {/* Upper Section */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo Section */}
           <div className="flex flex-col">
@@ -23,7 +24,7 @@ export const Footer = () => {
                     alt="Dream Definers Logo"
                     width={100}
                     height={100}
-                    className="object-contain filter w-full"
+                    className="object-contain filter w-full rounded-md"
                   />
                 </div>
                 <div className="text-center">
@@ -136,8 +137,9 @@ export const Footer = () => {
                     className={cn(
                       "size-5",
                       item.name === "LinkedIn" && "text-blue-600",
+                      item.name === "Instagram" && "text-pink-600",
                       item.name === "Youtube" && "text-red-600",
-                      item.name === "Call" && "text-gray-800",
+                      item.name === "Call" && "text-green-600 rotate-90",
                       item.name === "Facebook" && "text-blue-600"
                     )}
                   />
@@ -147,7 +149,7 @@ export const Footer = () => {
 
             {/* Large Brand Name */}
             <div className="flex-1 flex justify-end items-center">
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-blue-800/25 uppercase tracking-wider select-none">
+              <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white/25 uppercase tracking-wider select-none">
                 DREAM DEFINERS
               </h2>
             </div>

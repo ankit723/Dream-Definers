@@ -9,7 +9,7 @@ export function FAQSection() {
     <div className="my-8 sm:my-12 md:my-16 lg:my-20 xl:my-24 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
       <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-6 sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20">Frequently Asked Questions ?</h1>
       
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 scale-85">
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
           <Image src="/assets/home/faq/faq.png" alt="FAQ" width={600} height={600} className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto" />
         </div>

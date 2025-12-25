@@ -8,21 +8,21 @@ export default function CoursesPage() {
       title: "Aviation",
       description:
         "Aviation And Ground Staff Training Programs Offer Young Boys And Girls Comprehensive Skills In Flight Operations, Safety Protocols, Customer Service, And Technical Maintenance For Rewarding Careers In The Aviation Industry.",
-      image: "/assets/home/courses/aviation.png",
+      image: "/assets/home/courses/aviation2.png",
       imagePosition: "right" as const,
     },
     {
       title: "Effective Communication",
       description:
         "Effective Communication Training Programs Offer Young Boys And Girls Comprehensive Skills In Flight Operations, Safety Protocols, Customer Service, And Technical Maintenance For Rewarding Careers In The Aviation Industry.",
-      image: "/assets/home/courses/communication.png",
+      image: "/assets/home/courses/communication2.png",
       imagePosition: "left" as const,
     },
     {
       title: "Pre-Placement Traning",
       description:
         "Pre-Placement Training Programs Offer Young Boys And Girls Comprehensive Skills In Flight Operations, Safety Protocols, Customer Service, And Technical Maintenance For Rewarding Careers In The Aviation Industry.",
-      image: "/assets/home/courses/placement.png",
+      image: "/assets/home/courses/placement2.png",
       imagePosition: "right" as const,
     },
   ];
@@ -31,7 +31,7 @@ export default function CoursesPage() {
     <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="container mx-auto px-4">
         {/* Header with Back Button and Title */}
-        <div className="flex items-center justify-center gap-4 mb-16 relative">
+        <div className="flex items-center justify-center gap-4  relative">
 
           {/* Main Heading - Centered */}
           <h1 className="text-5xl md:text-6xl font-bold text-black">
@@ -40,7 +40,7 @@ export default function CoursesPage() {
         </div>
 
         {/* Course Sections */}
-        <div className="space-y-20">
+        <div className="space-y-20 scale-90">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -58,7 +58,7 @@ export default function CoursesPage() {
                 </p>
                 <Button
                   variant="outline"
-                  className="bg-white border-2 border-black text-black hover:bg-gray-50 rounded-lg px-8 py-6 text-lg font-medium"
+                  className="bg-white border-2 border-black text-black hover:bg-blue-900 hover:text-white hover:border-white active:scale-95 cursor-pointer  rounded-lg px-8 py-6 text-lg font-medium"
                 >
                   JOIN NOW
                 </Button>

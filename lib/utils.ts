@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
-import { FaLinkedin, FaYoutube, FaPhone, FaFacebook, FaStar, FaPlus } from "react-icons/fa";
+import { FaLinkedin, FaYoutube, FaPhone, FaFacebook, FaStar, FaPlus, FaInstagram } from "react-icons/fa";
 
 
 export function cn(...inputs: ClassValue[]) {
@@ -54,13 +54,19 @@ export function social() {
   return [
     {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/your-page",
+      "url": "https://www.linkedin.com/in/dream-definers-b50773322?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       "icon": FaLinkedin,
       "color": "blue"
     },
     {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/dreamdefinersacademy?igsh=eWFqcGUweXA1ZTZw",
+      "icon": FaInstagram,
+      "color": "pink"
+    },
+    {
       "name": "Youtube",
-      "url": "https://www.youtube.com/your-page",
+      "url": "https://youtube.com/@dreamdefinerstrainingacademy?si=okxLVyimygP1icDO",
       "icon": FaYoutube,
       "color": "red"
     },
@@ -72,7 +78,7 @@ export function social() {
     },
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/your-page",
+      "url": "https://www.facebook.com/share/14RZGX1nopP/",
       "icon": FaFacebook,
       "color": "blue"
     }
@@ -254,12 +260,6 @@ export function reviews() {
       "review": "Dream Definers Training Academy transformed my communication skills completely. The trainers are highly professional and the sessions are very interactive. I feel much more confident now in interviews and presentations."
     },
     {
-      "name": "Rajesh Kumar",
-      "role": "Placement Coordinator, NIT Rourkela",
-      "rating": 5,
-      "review": "We've been working with Dream Definers for the past 2 years. Their pre-placement training program has significantly improved our students' placement rates. The personalized approach and industry-relevant content make them stand out."
-    },
-    {
       "name": "Anjali Patel",
       "role": "Aviation Student",
       "rating": 5,
@@ -338,3 +338,4 @@ export function blogs() {
     }
   ]
 }
+

@@ -36,7 +36,9 @@ export default function FreeConsultancyPage() {
         </div>
 
         {/* Form */}
-        <ConsultancyForm />
+        <div className="scale-90 -mt-16">
+          <ConsultancyForm />
+        </div>
       </div>
     </div>
   );

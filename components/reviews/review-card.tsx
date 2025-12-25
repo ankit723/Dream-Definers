@@ -11,6 +11,11 @@ interface ReviewCardProps {
   className?: string;
 }
 
+const truncate =(txt:string)=>{
+  return txt.length > 90 ? txt.substring(0, 90) + '...' : txt;
+
+}
+
 export const ReviewCard = ({
   name,
   role,
@@ -60,7 +65,7 @@ export const ReviewCard = ({
           </div>
         </div>
       </div>
-      <p className="text-blue-950/80 leading-relaxed text-sm">{review}</p>
+      <p className="text-blue-950/80 leading-relaxed text-sm">{truncate(review)}</p>
     </div>
   );
 };
