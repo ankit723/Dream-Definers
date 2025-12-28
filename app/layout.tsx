@@ -95,7 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-<Script
+        <Script
           id="contentsquare-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -108,7 +108,8 @@ export default function RootLayout({
               })();
             `,
           }}
-        />      </head>
+        />      
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

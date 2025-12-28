@@ -58,7 +58,7 @@ export const Footer = () => {
                   href="/courses"
                   className="text-white/90 hover:text-white transition-colors text-sm"
                 >
-                  Programs
+                  Courses
                 </Link>
               </li>
               <li>
@@ -66,7 +66,7 @@ export const Footer = () => {
                   href="/contact-us"
                   className="text-white/90 hover:text-white transition-colors text-sm"
                 >
-                  Colleges
+                  Contact Us
                 </Link>
               </li>
             </ul>

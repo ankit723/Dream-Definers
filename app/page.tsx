@@ -107,12 +107,26 @@ export default function Home() {
             Courses
           </h1>
 
-          <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
-            {/* Card */}
-            <div className="flex-1 flex flex-col items-center gap-4 w-full sm:w-auto">
-              {/* IMAGE CONTAINER */}
-              <div className="relative w-[150px] h-[150px] xs:w-[180px] xs:h-[180px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] 2xl:w-[450px] 2xl:h-[450px] overflow-hidden rounded-lg"
-              >
+          {/* Grid layout for better mobile responsiveness */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+            {/* Card 1 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
+                <Image
+                  src="/assets/home/courses/life_skills.jpeg"
+                  alt="Life Skills"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
+                Life Skills
+              </h2>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
                 <Image
                   src="/assets/home/courses/aviation2.png"
                   alt="Aviation"
@@ -120,45 +134,68 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer px-6">
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
                 Aviation
               </h2>
             </div>
 
-            <div className="flex-1 flex flex-col items-center gap-4 w-full sm:w-auto">
-              {/* IMAGE CONTAINER */}
-              <div
-                className="relative w-[150px] h-[150px] xs:w-[180px] xs:h-[180px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] 2xl:w-[450px] 2xl:h-[450px] overflow-hidden rounded-lg"
-              >
+            {/* Card 3 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
                 <Image
-                  src="/assets/home/courses/communication2.png"
-                  alt="Communication"
+                  src="/assets/home/courses/effective_communication.jpeg"
+                  alt="Effective Communication"
                   fill
                   className="object-cover"
                 />
               </div>
-
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer px-6">
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
                 Effective Communication
               </h2>
             </div>
 
-            <div className="flex-1 flex flex-col items-center gap-4 w-full sm:w-auto">
-              {/* IMAGE CONTAINER */}
-              <div
-                className="relative w-[150px] h-[150px] xs:w-[180px] xs:h-[180px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] 2xl:w-[450px] 2xl:h-[450px] overflow-hidden rounded-lg"
-              >
+            {/* Card 4 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
                 <Image
-                  src="/assets/home/courses/placement2.png"
+                  src="/assets/home/courses/placement.jpeg"
                   alt="Pre-Placement Training"
                   fill
                   className="object-cover"
                 />
               </div>
-
-              <h2 className="text-blue-950 text-xs xs:text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 p-2 sm:p-2.5 md:p-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer px-6">
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
                 Pre-Placement Training
+              </h2>
+            </div>
+
+            {/* Card 5 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
+                <Image
+                  src="/assets/home/courses/corporate_training.jpeg"
+                  alt="Corporate Training"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
+                Corporate Training
+              </h2>
+            </div>
+
+            {/* Card 6 */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
+                <Image
+                  src="/assets/home/courses/spoken_english.jpeg"
+                  alt="Spoken English"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-blue-950 text-sm sm:text-base md:text-lg text-center font-bold border border-blue-950 px-6 py-2.5 sm:py-3 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full max-w-[280px] sm:max-w-none">
+                Spoken English
               </h2>
             </div>
           </div>
@@ -242,11 +279,13 @@ export default function Home() {
         </div>
 
         <div className="my-8 sm:my-12 md:my-16 lg:my-20 xl:my-24 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+          <h1 className="text-blue-950 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold">
             Trusted Partners
           </h1>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mt-6 sm:mt-10 md:mt-12 lg:mt-16 xl:mt-20">
+          <PartnersCarousel />
+
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-40 2xl:mt-48">
             {keyFeatures().map((item) => (
               <div
                 className="flex flex-col items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 border-2 border-blue-950 p-3 sm:p-4 md:p-5 lg:p-6 rounded-md bg-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer w-full shadow-2xl"
@@ -273,7 +312,6 @@ export default function Home() {
             ))}
           </div>
 
-          <PartnersCarousel />
         </div>
 
         <div className="my-8 sm:my-12 md:my-16 lg:my-20 xl:my-24 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
@@ -281,11 +319,11 @@ export default function Home() {
             Meet Our Founders
           </h1>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 px-40">
-            {/* Founder Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-7xl mx-auto">
+            {/* Founder Card - Sonali Singh */}
             <div className="flex flex-col">
-              {/* Image wrapper enforces size */}
-              <div className="relative w-full aspect-4/5 overflow-hidden rounded-xl">
+              {/* Image wrapper with proper aspect ratio */}
+              <div className="relative w-full aspect-4/5 overflow-hidden rounded-xl shadow-lg">
                 <Image
                   src="/assets/home/founders/sonali2.jpeg"
                   alt="Sonali Singh"
@@ -295,11 +333,11 @@ export default function Home() {
                 />
               </div>
 
-              <h2 className="text-blue-950 text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+              <h2 className="text-blue-950 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-4 sm:mt-5 md:mt-6">
                 Sonali Singh
               </h2>
 
-              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3">
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3 text-gray-700">
                 One of our esteemed founders, Sonali Singh, has an MA in
                 Political Science and more than twenty years of experience as a
                 Senior Class Teacher and Soft Skills Trainer. She is a
@@ -310,16 +348,16 @@ export default function Home() {
               <Link href="/our-founders" className="mt-5 w-fit">
                 <Button
                   variant="outline"
-                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all"
+                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all text-sm sm:text-base"
                 >
                   Read More
                 </Button>
               </Link>
             </div>
 
-            {/* Founder Card */}
+            {/* Founder Card - Randhir Garnaik */}
             <div className="flex flex-col">
-              <div className="relative w-full aspect-4/5 overflow-hidden rounded-xl">
+              <div className="relative w-full aspect-4/5 overflow-hidden rounded-xl shadow-lg">
                 <Image
                   src="/assets/home/founders/randhir4.jpg"
                   alt="Randhir Garnaik"
@@ -328,11 +366,11 @@ export default function Home() {
                 />
               </div>
 
-              <h2 className="text-blue-950 text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+              <h2 className="text-blue-950 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-4 sm:mt-5 md:mt-6">
                 Randhir Garnaik
               </h2>
 
-              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3">
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3 text-gray-700">
                 Our founder Randhir Garnaik is a well-trained Soft Skills
                 Trainer, a life coach and an entrepreneur with more than twenty
                 years of experience. His expertise spans Communicative English,
@@ -345,7 +383,7 @@ export default function Home() {
               >
                 <Button
                   variant="outline"
-                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all"
+                  className="border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white transition-all text-sm sm:text-base"
                 >
                   Read More
                 </Button>

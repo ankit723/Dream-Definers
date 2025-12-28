@@ -1,65 +1,30 @@
 import Image from "next/image"
-import Link from "next/link"
 
 export default function GalleryPage() {
-  const galleryImages = [
-    {
-      src: "/assets/gallery/image.png",
-      alt: "Panel discussion in conference room with Vimarsh presentation",
-    },
-    {
-      src: "/assets/gallery/image copy.png",
-      alt: "Man speaking into microphone in auditorium",
-    },
-    {
-      src: "/assets/gallery/image copy 2.png",
-      alt: "Classroom training session with Dream Definers Academy logo",
-    },
-    {
-      src: "/assets/gallery/image copy 3.png",
-      alt: "Man presenting flowers to woman at seminar",
-    },
-    {
-      src: "/assets/gallery/image copy 4.png",
-      alt: "Group photo of students in matching uniforms",
-    },
-    {
-      src: "/assets/gallery/image copy 5.png",
-      alt: "Classroom with students at yellow desks",
-    },
-    {
-      src: "/assets/gallery/image copy 6.png",
-      alt: "Wide shot of auditorium with large audience",
-    },
-    {
-      src: "/assets/gallery/image copy 7.png",
-      alt: "Large auditorium with audience in blue chairs",
-    },
-    {
-      src: "/assets/gallery/image copy 8.png",
-      alt: "Indoor event with semi-circular seating arrangement",
-    },
-  ]
-
   return (
-    <div className="min-h-screen bg-white pt-24 pb-20">
-      <div className="container mx-auto px-4">
-
+    <div className="min-h-screen bg-white pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 md:pb-20">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
         {/* Header */}
-        <div className="relative flex items-center justify-center">
-          <Link
-            href="/"
-            className="absolute left-0 flex items-center justify-center w-10 h-10 rounded-full border border-black hover:bg-black hover:text-white transition"
-          >
-            ←
-          </Link>
-
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide">
+        <div className="flex items-center justify-center mb-8 sm:mb-12 md:mb-16">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-blue-950">
             GALLERY
           </h1>
         </div>
 
-        <Image src="/assets/gallery/gallery_copy.png" alt="Gallery Image" width={100} height={100} style={{height: "100%", width: "100vw", scale:"0.75", marginTop:"-15rem"}} unoptimized/>
+        {/* Gallery Image */}
+        <div className="relative w-full h-auto mt-8 sm:mt-12 md:mt-16">
+          <div className="relative w-full aspect-auto overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg">
+            <Image
+              src="/assets/gallery/gallery_copy.png"
+              alt="Gallery Image"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain"
+              priority
+              unoptimized
+            />
+          </div>
+        </div>
       </div>
     </div>
   )

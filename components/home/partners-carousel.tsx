@@ -11,7 +11,7 @@ import "swiper/css";
 
 export function PartnersCarousel() {
   return (
-    <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 mt-12 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-40 2xl:mt-48">
+    <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 mt-12 ">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={15}
