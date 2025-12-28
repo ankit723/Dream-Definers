@@ -128,7 +128,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 w-full">
               <div className="relative w-full aspect-square max-w-[280px] sm:max-w-none overflow-hidden rounded-lg mx-auto">
                 <Image
-                  src="/assets/home/courses/aviation2.png"
+                  src="/assets/home/courses/aviation3.jpeg"
                   alt="Aviation"
                   fill
                   className="object-cover"

@@ -15,7 +15,7 @@ export default function CoursesPage() {
       title: "Aviation",
       description:
         "Aviation And Ground Staff Training Programs Offer Young Boys And Girls Comprehensive Skills In Flight Operations, Safety Protocols, Customer Service, And Technical Maintenance For Rewarding Careers In The Aviation Industry.",
-      image: "/assets/home/courses/aviation2.png",
+      image: "/assets/home/courses/aviation3.jpeg",
       imagePosition: "left" as const,
     },
     {
