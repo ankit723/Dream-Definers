@@ -226,11 +226,11 @@ export function faq() {
   return [
     {
       "question": "How can students/colleges contact us for enrollment/collaboration?",
-      "answer": "Dream Definers Training Academy offers professional training in Life Skills, Aviation, Effective Communication, Pre-Placement Training (Interview Preparation), Corporate Training and Spoken English."
+      "answer": "You can call us on 9937003373/8144553579. You can also reach us via mail with dreamdefinerstrainingacademy@gmail.com. You can also fill the consultation form that appears in the Home Page."
     },
     {
       "question": "What courses does Dream Definers Training Academy offer?",
-      "answer": "Dream Definers Training Academy offers professional training in Soft Skills, Aviation and Pre-Placement Training."
+      "answer": "Dream Definers Training Academy offers professional training in Life Skills, Aviation, Effective Communication, Pre-Placement Training (Interview Preparation), Corporate Training and Spoken English."
     },
     {
       "question": "Who can enroll in the programs?",
