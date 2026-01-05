@@ -130,18 +130,6 @@ export default function ContactUsPage() {
                 ))}
               </div>
             </div>
-
-            {/* Business Hours */}
-            <div className="bg-white border rounded-lg shadow-lg p-6 sm:p-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-blue-950 mb-6">
-                Business Hours
-              </h2>
-              <div className="space-y-2 text-blue-900">
-                <p><span className="font-semibold">Monday - Friday:</span> 9:00 AM - 6:00 PM</p>
-                <p><span className="font-semibold">Saturday:</span> 10:00 AM - 4:00 PM</p>
-                <p><span className="font-semibold">Sunday:</span> Closed</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

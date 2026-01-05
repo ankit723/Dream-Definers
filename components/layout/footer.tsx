@@ -87,7 +87,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li className="text-white/90 text-sm">Monday-Saturday</li>
-              <li className="text-white/90 text-sm">9.30am-05.00pm</li>
+              <li className="text-white/90 text-sm">10:00am-06:00pm</li>
             </ul>
           </div>
 
