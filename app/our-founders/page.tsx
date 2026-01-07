@@ -21,7 +21,7 @@ export default function OurFoundersPage() {
               </h2>
               <div className="space-y-4 text-gray-800 leading-relaxed">
                 <p>
-                  One of our esteemed founders, Sonali Singh, has an MA in
+                  Our Founder Sonali Singh, has an MA in
                   Political Science and more than twenty years of experience as
                   a Senior Class Teacher and Soft Skills Trainer. She is a
                   professional CBSE-certified Teachers&apos; Trainer, well known
