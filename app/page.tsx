@@ -338,7 +338,7 @@ export default function Home() {
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-3 text-gray-700">
-                Our founders Sonali Singh, has an MA in
+                Our founder Sonali Singh, has an MA in
                 Political Science and more than twenty years of experience as a
                 Senior Class Teacher and Soft Skills Trainer. She is a
                 professional CBSE-certified Teachers' Trainer, well known for
