@@ -18,7 +18,7 @@ export default function Terms&ConditionsPage() {
 
             <p className="text-black text-base sm:text-lg leading-relaxed">
               Dream Definers provides training programs, courses, career guidance, and related educational services. All services are subject to availability and may be modified or discontinued without prior notice.
-              For any questions, please contact Dream Definers Training Academy.
+              These Terms & Conditions shall be governed and interpreted in accordance with the laws of India.
             </p>
           </div>
         </div>
