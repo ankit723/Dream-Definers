@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms & Conditions - Dream Definers Training Academy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.7;
-      color: #333;
-    }
-    h1, h2 {
-      color: #1a237e;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    ul {
-      margin: 10px 0 10px 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Terms & Conditions</h1>
+export default function PrivacyPolicyPage() {
+  return (
+    <div className="min-h-screen bg-white pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 md:pb-20">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-4xl">
+        {/* Header */}
+        <div className="flex items-center justify-center mb-8 sm:mb-12 md:mb-16">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-blue-950">
+            Privacy Policy
+          </h1>
+        </div>
 
-    <p>Welcome to <strong>Dream Definers Training Academy</strong>. By accessing and using this website, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully.</p>
-
-    <h2>1. Acceptance of Terms</h2>
+        {/* Main Content */}
+        <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-6">
+            <p className="text-black text-base sm:text-lg leading-relaxed">
+              At Dream Definers Training Academy, we value your privacy. We collect basic personal information such as name, contact details, and other information shared during inquiries or enrollment. This information is used only to provide our training services, respond to queries, and improve our offerings.
+            </p>
+<h2>1. Acceptance of Terms</h2>
     <p>By using this website or submitting any form, you agree to these Terms & Conditions and our Privacy Policy. If you do not agree, please do not use our services.</p>
 
     <h2>2. Services</h2>
@@ -69,11 +55,10 @@
 
     <h2>12. Contact Information</h2>
     <p>If you have questions regarding these Terms & Conditions, please contact us:</p>
-    <p>
-      <strong>Dream Definers Training Academy</strong><br>
-      Email: dreamdefinerstrainingacademy@gmail.com<br>
-      Phone: +91 81445 53579
-    </p>
-  </div>
-</body>
-</html>
+    <p>>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
