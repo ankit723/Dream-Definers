@@ -80,7 +80,7 @@ export const Footer = () => {
             <ul className="flex flex-col gap-3">
              <li>
   <Link
-    href="/Terms-condition"
+    href="app/Terms-condition"
     className="text-white/90 hover:text-white transition-colors text-sm">
     Terms & Conditions
   </Link>
