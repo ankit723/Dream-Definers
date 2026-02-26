@@ -61,7 +61,7 @@ export default function ContactUsPage() {
           Privacy Policy
         </Link>{" "}
         and{" "}
-        <Link href="/terms-and-conditions" className="text-blue-950 underline hover:text-blue-900">
+        <Link href="/terms-conditions" className="text-blue-950 underline hover:text-blue-900">
           Terms & Conditions
         </Link>.
       </span>
