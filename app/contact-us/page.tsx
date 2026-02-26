@@ -46,7 +46,7 @@ export default function ContactUsPage() {
               Send us a Message
             </h2>
             <ContactForm />
-  {/* Consent Checkbox */}
+{/* Consent Checkbox */}
   <div className="mt-4">
     <label className="flex items-start gap-2 text-sm text-blue-900">
       <input
