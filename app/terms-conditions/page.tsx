@@ -1,0 +1,58 @@
+export default function TermsPage() {
+  return (
+    <div className="container mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold mb-4">Terms & Conditions</h1>
+      <p>Welcome to Dream Definers...</p>
+      <h1>Terms & Conditions</h1>
+
+<p>Welcome to Dream Definers. By accessing and using our website, services, and training programs, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully.</p>
+
+<h2>1. Acceptance of Terms</h2>
+<p>By using our website or submitting any form on our platform, you agree to these Terms & Conditions and our Privacy Policy. If you do not agree, please do not use our services.</p>
+
+<h2>2. Services</h2>
+<p>Dream Definers provides training programs, courses, career guidance, and related educational services. All services are subject to availability and may be modified or discontinued without prior notice.</p>
+
+<h2>3. User Responsibilities</h2>
+<p>You agree to:</p>
+<ul>
+  <li>Provide accurate and complete information when submitting forms.</li>
+  <li>Use our services only for lawful purposes.</li>
+  <li>Not misuse or attempt to disrupt our website or systems.</li>
+</ul>
+
+<h2>4. Communication Consent</h2>
+<p>By submitting your details on our website, you grant Dream Definers permission to contact you via SMS, WhatsApp, RCS, Email, Phone calls, or any other communication channel for training updates, promotional information, and support purposes.</p>
+
+<h2>5. Intellectual Property</h2>
+<p>All content on this website including text, images, logos, and course materials are the property of Dream Definers and are protected under applicable copyright and intellectual property laws. Unauthorized use is strictly prohibited.</p>
+
+<h2>6. Fees and Payments</h2>
+<p>All course fees once paid are non-refundable unless otherwise stated in writing. Dream Definers reserves the right to revise pricing and course structure at any time.</p>
+
+<h2>7. Limitation of Liability</h2>
+<p>Dream Definers shall not be liable for any direct or indirect loss arising from the use of our website or services, including but not limited to loss of data, business interruption, or personal outcomes.</p>
+
+<h2>8. External Links</h2>
+<p>Our website may contain links to third-party websites. Dream Definers is not responsible for the content, privacy policies, or practices of such external sites.</p>
+
+<h2>9. Termination of Access</h2>
+<p>We reserve the right to suspend or terminate access to our services if any user violates these Terms & Conditions.</p>
+
+<h2>10. Changes to Terms</h2>
+<p>Dream Definers may update these Terms & Conditions from time to time. Any changes will be posted on this page and will be effective immediately.</p>
+
+<h2>11. Governing Law</h2>
+<p>These Terms & Conditions shall be governed and interpreted in accordance with the laws of India.</p>
+
+<h2>12. Contact Information</h2>
+<p>If you have any questions regarding these Terms & Conditions, please contact us:</p>
+
+<p>
+<strong>Dream Definers</strong><br/>
+Email: dreamdefinerstrainingacademy@gmail.com<br/>
+Phone: +91 81445 53579
+</p>
+    </div>
+  );
+}
