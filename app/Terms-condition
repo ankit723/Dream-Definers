@@ -1,4 +1,9 @@
-<h1>Terms & Conditions</h1>
+export default function TermsPage() {
+  return (
+    <div className="container mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold mb-4">Terms & Conditions</h1>
+      <p>Welcome to Dream Definers...</p>
+      <h1>Terms & Conditions</h1>
 
 <p>Welcome to Dream Definers. By accessing and using our website, services, and training programs, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully.</p>
 
@@ -48,3 +53,6 @@
 Email: dreamdefinerstrainingacademy@gmail.com<br/>
 Phone: +91 81445 53579
 </p>
+    </div>
+  );
+}
