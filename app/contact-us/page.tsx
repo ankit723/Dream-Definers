@@ -67,7 +67,6 @@ export default function ContactUsPage() {
       </span>
     </label>
   </div>
-</div>
           </div>
 
           {/* Contact Information */}
