@@ -46,13 +46,6 @@ export default function ContactUsPage() {
               Send us a Message
             </h2>
             <ContactForm />
-            <div className="bg-white border rounded-lg shadow-lg p-6 sm:p-8 md:p-10">
-  <h2 className="text-2xl sm:text-3xl font-bold text-blue-950 mb-6">
-    Send us a Message
-  </h2>
-
-  <ContactForm />
-
   {/* Consent Checkbox */}
   <div className="mt-4">
     <label className="flex items-start gap-2 text-sm text-blue-900">
