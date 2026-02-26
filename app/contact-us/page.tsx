@@ -46,6 +46,35 @@ export default function ContactUsPage() {
               Send us a Message
             </h2>
             <ContactForm />
+            <div className="bg-white border rounded-lg shadow-lg p-6 sm:p-8 md:p-10">
+  <h2 className="text-2xl sm:text-3xl font-bold text-blue-950 mb-6">
+    Send us a Message
+  </h2>
+
+  <ContactForm />
+
+  {/* Consent Checkbox */}
+  <div className="mt-4">
+    <label className="flex items-start gap-2 text-sm text-blue-900">
+      <input
+        type="checkbox"
+        required
+        className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-950 focus:ring-blue-900"
+      />
+      <span>
+        By submitting this form, you hereby grant us permission to contact you via SMS,
+        WhatsApp, RCS, email, or any other communication channel. You also agree to our{" "}
+        <Link href="/privacy-policy" className="text-blue-950 underline hover:text-blue-900">
+          Privacy Policy
+        </Link>{" "}
+        and{" "}
+        <Link href="/terms-and-conditions" className="text-blue-950 underline hover:text-blue-900">
+          Terms & Conditions
+        </Link>.
+      </span>
+    </label>
+  </div>
+</div>
           </div>
 
           {/* Contact Information */}
