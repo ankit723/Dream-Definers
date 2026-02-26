@@ -79,7 +79,9 @@ export const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-3">
              <li>
-  <Link href="/Terms-condition" className="text-white/90 hover:text-white transition-colors text-sm">
+  <Link href="/Terms-condition"
+    className="text-white/90 hover:text-white transition-colors text-sm">
+    >
     Terms & Conditions
   </Link>
 </li>
