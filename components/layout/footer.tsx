@@ -82,7 +82,6 @@ export const Footer = () => {
   <Link
     href="/Terms-condition"
     className="text-white/90 hover:text-white transition-colors text-sm">
-    >
     Terms & Conditions
   </Link>
 </li>
