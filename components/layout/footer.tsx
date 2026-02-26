@@ -79,7 +79,7 @@ export const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-3">
              <li>
-  <Link href="/terms-conditions" className="hover:underline">
+  <Link href="/Terms-condition" className="hover:underline">
     Terms & Conditions
   </Link>
 </li>
